@@ -7,9 +7,206 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #000;
   min-height: 100vh;
   display: flex;
+  perspective: 1000px;
   flex-direction: column;
+  transform-style: preserve-3d;
+}
+.container{
+  width: 80%;
+  perspective: 800px;
+}
+
+.parent{
+  position: absolute;
+  top: 350px;
+  left: 300px;
+  transform: translate(-400px, -400px);
+  width: 800px;
+  height:800px;
+}
+
+.content{
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(340deg) rotateY(51deg) rotateZ(359deg);
+  width: 256px;
+  height: 256px;
+  transform-style: preserve-3d;
+  animation: cube-tube 4s both ease;  */
+}
+.you-tube{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(340deg) rotateY(51deg) rotateZ(359deg);
+  width: 256px;
+  height: 256px;
+  transform-style: preserve-3d;
+  animation: cube-tube 4s both ease; 
+}
+.twitter{
+  position: absolute;
+  top: 50%;
+  left: 81%;
+  transform: translate(-50%, -50%) rotateX(340deg) rotateY(51deg) rotateZ(359deg);
+  width: 256px;
+  height: 256px;
+  transform-style: preserve-3d;
+  animation: cube-twiiter 4s both ease; 
+}
+.facebook{
+  position: absolute;
+  top: 50%;
+  left: 111%;
+  transform: translate(-50%, -50%) rotateX(340deg) rotateY(51deg) rotateZ(359deg);
+  width: 256px;
+  height: 256px;
+  transform-style: preserve-3d;
+  animation: cube-facebook 4s both ease; 
+}
+.style-none{
+  list-style-type: none;
+}
+.box{
+  width: 250px;
+  height: 250px;
+  background-color: rgb(207, 200, 200);
+  text-transform: capitalize;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+.front{
+  transform: translate3d(0,0,125px);
+}
+.back{
+  transform: translate3d(0,0,-125px) rotateY(180deg);
+}
+.left{
+  transform: translate3d(-125px,0px, 0px) rotateY(-90deg);
+}
+
+.right{
+  transform: translate3d(125px,0px, 0px) rotateY(90deg);
+}
+.top{
+  background-color: red;
+  transform: translate3d(0px,-125px, 0px) rotateX(90deg);
+}
+.bottom{
+ 
+  transform: translate3d(0px,125px, 0px) rotateX(-90deg);
+}
+.top-face{
+  background-color: #2600ff;
+  transform: translate3d(0px,-125px, 0px) rotateX(90deg);
+}
+
+
+@keyframes cube-tube{
+  0%{
+    transform: translate(-50%, -50%) rotateX(340deg) rotateY(-51deg) rotateZ(359deg);
+  }
+  25%{
+    transform: translate(-50%, -50%) rotateX(170deg) rotateY(-45deg) rotateZ(90deg);
+  }
+  50%{
+    transform: translate(-50%, -50%) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
+  }
+  75%{
+    transform: translate(-50%, -50%) rotateX(90deg) rotateY(270deg) rotateZ(45deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotateX(-90deg) rotateY(-180deg) rotateZ(-180deg);
+  }
+}
+
+@keyframes cube-twiiter{
+  0%{
+    transform: translate(-50%, -50%) rotateX(90deg) rotateY(-45deg) rotateZ(159deg);
+  }
+  25%{
+    transform: translate(-50%, -50%) rotateX(170deg) rotateY(30deg) rotateZ(450deg);
+  }
+  50%{
+    transform: translate(-50%, -50%) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
+  }
+  75%{
+    transform: translate(-50%, -50%) rotateX(120deg) rotateY(270deg) rotateZ(60deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotateX(-90deg) rotateY(-180deg) rotateZ(-180deg);
+  }
+}
+@keyframes cube-facebook{
+  0%{
+    transform: translate(-50%, -50%) rotateX(90deg) rotateY(-45deg) rotateZ(159deg);
+  }
+  25%{
+    transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) rotateZ(-90deg);
+  }
+  50%{
+    transform: translate(-50%, -50%) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
+  }
+  75%{
+    transform: translate(-50%, -50%) rotateX(290deg) rotateY(70deg) rotateZ(45deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotateX(-90deg) rotateY(-180deg) rotateZ(-180deg);
+  }
+}
+
+.you-text{
+  font-size: 28px;
+  font-weight: bold;
+  color: #554f4f;
+  text-align: center;
+  align-items: center;
+}
+.you{
+  padding-top: 65px;
+  margin-bottom: 7px;
+}
+.tube{
+  width: 100px;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #8d7c7c;
+}
+.red-text{
+  color: #fff;
+}
+.red-tube{
+  background-color: #fff;
+  color: red;
+}
+.bxl-twitter{
+  padding-top: 65px;
+  display: block;
+  color: #554f4f;
+  font-size: 120px;
+  text-align: center;
+  align-items: center; 
+}
+.bxl-facebook{
+  padding-top: 65px;
+  display: block;
+  color: #554f4f;
+  font-size: 120px;
+  text-align: center;
+  align-items: center;
+}
+.top-face-icon{
+  color: #fff;
 }
 
