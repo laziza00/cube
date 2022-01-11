@@ -29,16 +29,6 @@ body {
 }
 
 .content{
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotateX(340deg) rotateY(51deg) rotateZ(359deg);
-  width: 256px;
-  height: 256px;
-  transform-style: preserve-3d;
-  animation: cube-tube 4s both ease;  */
-}
-.you-tube{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,25 +38,37 @@ body {
   transform-style: preserve-3d;
   animation: cube-tube 4s both ease; 
 }
-.twitter{
+.you-tube{
+  transition-property: inherit;
+  transition: transform 1s ease;
   position: absolute;
   top: 50%;
-  left: 82%;
-  transform: translate(-50%, -50%) rotateX(340deg) rotateY(51deg) rotateZ(359deg);
+  left: 37%;
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   width: 256px;
   height: 256px;
   transform-style: preserve-3d;
-  animation: cube-twiiter 4s both ease; 
+}
+.twitter{
+  transition-property: inherit;
+  transition: transform 1s ease;
+  position: absolute;
+  top: 50%;
+  left: 62%;
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  width: 256px;
+  height: 256px;
+  transform-style: preserve-3d;
 }
 .facebook{
+  transition-property: inherit;
+  transition: transform 1s ease;
   position: absolute;
   top: 50%;
-  left: 114%;
-  transform: translate(-50%, -50%) rotateX(340deg) rotateY(51deg) rotateZ(359deg);
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   width: 256px;
   height: 256px;
   transform-style: preserve-3d;
-  animation: cube-facebook 4s both ease; 
 }
 .style-none{
   list-style-type: none;
@@ -110,58 +112,6 @@ body {
 }
 
 
-@keyframes cube-tube{
-  0%{
-    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(deg);
-  }
-  25%{
-    transform: translate(-50%, -50%) rotateX(170deg) rotateY(-45deg) rotateZ(90deg);
-  }
-  50%{
-    transform: translate(-50%, -50%) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
-  }
-  75%{
-    transform: translate(-50%, -50%) rotateX(90deg) rotateY(270deg) rotateZ(45deg);
-  }
-  100%{
-    transform: translate(-50%, -50%) rotateX(-90deg) rotateY(-180deg) rotateZ(-180deg);
-  }
-}
-
-@keyframes cube-twiiter{
-  0%{
-    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  25%{
-    transform: translate(-50%, -50%) rotateX(170deg) rotateY(30deg) rotateZ(450deg);
-  }
-  50%{
-    transform: translate(-50%, -50%) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
-  }
-  75%{
-    transform: translate(-50%, -50%) rotateX(120deg) rotateY(270deg) rotateZ(60deg);
-  }
-  100%{
-    transform: translate(-50%, -50%) rotateX(-90deg) rotateY(-180deg) rotateZ(-180deg);
-  }
-}
-@keyframes cube-facebook{
-  0%{
-    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  25%{
-    transform: translate(-50%, -50%) rotateX(170deg) rotateY(30deg) rotateZ(450deg);
-  }
-  50%{
-    transform: translate(-50%, -50%) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
-  }
-  75%{
-    transform: translate(-50%, -50%) rotateX(120deg) rotateY(270deg) rotateZ(60deg);
-  }
-  100%{
-    transform: translate(-50%, -50%) rotateX(-90deg) rotateY(-180deg) rotateZ(-180deg);
-  }
-}
 
 .you-text{
   font-size: 28px;
@@ -210,6 +160,18 @@ body {
   color: #fff;
 }
 
-/* .item-facebook:hover{
-  animation: cube-tube 4s both ease; 
-} */
+.item-youtube:hover{
+  transform: translate(-50%, -50%) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
+}
+.item-facebook:hover{
+  transform: translate(-50%, -50%) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
+}
+.item-twitter:hover{
+  transform: translate(-50%, -50%) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
+}
+.cube-list{
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
