@@ -112,7 +112,7 @@ body {
 
 @keyframes cube-tube{
   0%{
-    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(deg);
   }
   25%{
     transform: translate(-50%, -50%) rotateX(170deg) rotateY(-45deg) rotateZ(90deg);
@@ -150,13 +150,13 @@ body {
     transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   25%{
-    transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) rotateZ(-90deg);
+    transform: translate(-50%, -50%) rotateX(170deg) rotateY(30deg) rotateZ(450deg);
   }
   50%{
     transform: translate(-50%, -50%) rotateX(90deg) rotateY(180deg) rotateZ(180deg);
   }
   75%{
-    transform: translate(-50%, -50%) rotateX(290deg) rotateY(70deg) rotateZ(45deg);
+    transform: translate(-50%, -50%) rotateX(120deg) rotateY(270deg) rotateZ(60deg);
   }
   100%{
     transform: translate(-50%, -50%) rotateX(-90deg) rotateY(-180deg) rotateZ(-180deg);
@@ -209,7 +209,7 @@ body {
 .top-face-icon{
   color: #fff;
 }
-/* 
-.item-facebook:hover{
+
+/* .item-facebook:hover{
   animation: cube-tube 4s both ease; 
 } */
