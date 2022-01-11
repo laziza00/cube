@@ -112,7 +112,7 @@ body {
 
 @keyframes cube-tube{
   0%{
-    transform: translate(-50%, -50%) rotateX(340deg) rotateY(-51deg) rotateZ(359deg);
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   25%{
     transform: translate(-50%, -50%) rotateX(170deg) rotateY(-45deg) rotateZ(90deg);
@@ -130,7 +130,7 @@ body {
 
 @keyframes cube-twiiter{
   0%{
-    transform: translate(-50%, -50%) rotateX(90deg) rotateY(-45deg) rotateZ(159deg);
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   25%{
     transform: translate(-50%, -50%) rotateX(170deg) rotateY(30deg) rotateZ(450deg);
@@ -147,7 +147,7 @@ body {
 }
 @keyframes cube-facebook{
   0%{
-    transform: translate(-50%, -50%) rotateX(90deg) rotateY(-45deg) rotateZ(159deg);
+    transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   25%{
     transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) rotateZ(-90deg);
